@@ -154,7 +154,7 @@ h1,h2,h3,h4,h5,h6,.b-button
 *{
     font-family: 'Open Sans', sans-serif;
 }
-h1,h2,h3,h4,h5,h6,button,.b-button, .btn, .title{
+h1,h2,h3,h4,h5,h6,button, .btn, .title{
     font-family: 'Comfortaa', cursive;
     font-weight: bolder !important;
 }
@@ -204,7 +204,7 @@ h1,h2,h3,h4,h5,h6,button,.b-button, .btn, .title{
 .progress-bar{
     background-color: var(--primary-0);
 }
-input[type="checkbox" ] {
+input[type="checkbox"] {
     cursor: default;
     appearance: auto;
     box-sizing: border-box;
@@ -245,4 +245,8 @@ input[type="checkbox" ] {
 
 .form-label{
     margin-bottom:1px;
+}
+
+.card{
+    padding: 45px 5vw;
 }
