@@ -9,7 +9,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/pagina1',
+    path: '/',
     name: 'pagina1',
     component: Pagina1
   },
