@@ -77,7 +77,7 @@
 											
 											<!-- PARCELAS -->
 											<div class="form-group" v-if="fp.parcelas.length > 0 && parcelamentos.length > 0">
-												<label class="form-label mt-2">Parcelamento em*:</label><br/>
+												<label class="form-label mt-2">Parcelamento em</label><br/>
 												<small class="danger" v-if="veeErrors.has('input-parcelas')">{{veeErrors.first('input-parcelas')}}</small>
 												<div class="form-check mt-2" v-for="parc,i in parcelamentos" :key="`parcela_${i}`">
 													<input class="form-check-input" type="radio" :id="`input-parcelas_${i}`" 
@@ -228,7 +228,10 @@ export default {
     border-radius: 4px;
     border-width: 1px;
     border-color: var(--secondary--6);
-    background-color: var(--secondary--2);
+    background-color: var(--secondary--1);
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.5);
 }
 .custom-checkbox input[type=checkbox]{
 	margin-left: 10px;
