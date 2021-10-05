@@ -32,11 +32,11 @@ export default {
 
 .progress{
     display: inline-flex;
-    width: 85%;
+    width: 80%;
 }
 .progress-label{
     text-align:right;
-    width: 15%;
+    width: 20%;
     float:right;
 }
 </style>
