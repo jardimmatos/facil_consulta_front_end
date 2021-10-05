@@ -1,24 +1,16 @@
-# facil-consulta
+# facil-consulta - Desafio Frontend
 
-## Project setup
+## Instalação dos pacotes 
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Executar o servidor
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Gerar build produção
 ```
 yarn build
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
