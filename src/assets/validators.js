@@ -2,10 +2,14 @@ const dictionary = {
     pt: {
         messages: {
             required: (field) => `${field} é obrigatório.`,
-            min: (field,size) => `${field} deve ter, pelo menos,  ${size} caracteres.`,
-            max: (field,size) => `${field} deve ter, no máximo,  ${size} caracteres.`,
+            min: (field,size) => {
+                return `${size} caracteres são necessários`
+            },
+            max: (field,size) => {
+                return `Máximo de ${size} caracteres, atingido!`
+            },
             between: (field, params) => `${field} deve estar entre ${params[0]} e ${params[1]}`,
-            included: (field) => `Necessário selecionar uma opção no campo ${field}` 
+            included: () => `Necessário selecionar uma opção` 
         }
     }
 }
