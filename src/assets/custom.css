@@ -154,24 +154,22 @@ h1,h2,h3,h4,h5,h6,.b-button
 *{
     font-family: 'Open Sans', sans-serif;
 }
+
 h1,h2,h3,h4,h5,h6,button, .btn, .title{
     font-family: 'Comfortaa', cursive;
     font-weight: bolder !important;
 }
+
 .bold{
     font-weight: bold;
 }
+
 .bolder{
     font-weight: bolder;
 }
 
-.card{
-    border-radius: 40px;
-    padding: 20px 5%;
-}
-
 .form-group{
-    padding: 10px 0px;
+    padding: 4px 0px;
 }
 
 .btn-primary {
@@ -201,9 +199,11 @@ h1,h2,h3,h4,h5,h6,button, .btn, .title{
     transition: 0.2s;
     box-shadow: none !important;
 }
+
 .progress-bar{
     background-color: var(--primary-0);
 }
+
 input[type="checkbox"] {
     cursor: default;
     appearance: auto;
@@ -217,20 +217,24 @@ input[type="checkbox"] {
 .btn-link{
     text-decoration: none;
 }
+
 .btn-link:hover{
     color: var(--primary--1);
 }
+
 .card{
     -webkit-box-shadow: 2px 2px 9px 0px rgba(50, 50, 50, 0.5);
     -moz-box-shadow:    2px 2px 9px 0px rgba(50, 50, 50, 0.5);
     box-shadow:         2px 2px 9px 0px rgba(50, 50, 50, 0.5);
+    border-radius: 40px;
+    padding: 45px 6vw;
 }
 
 .is-valid{
     border-color: rgba(0,0,0,0.2) !important;
     background-image: none !important;
-    
 }
+
 .is-invalid{
     border-color: var(--danger) !important;
 }
@@ -247,6 +251,20 @@ input[type="checkbox"] {
     margin-bottom:1px;
 }
 
-.card{
-    padding: 45px 5vw;
+.messages-error{
+    flex: 1 1 auto;
+    font-size: 13px;
+    height: 14px ;
+    min-width: 1px;
+    position: relative;
+    color: var(--danger);
+}
+
+.revision{
+    margin: 15px 0;
+}
+
+.revision-label{
+    margin-bottom:4px;
+    font-weight: bold;
 }
