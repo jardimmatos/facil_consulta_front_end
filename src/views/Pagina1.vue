@@ -29,7 +29,7 @@
                                             :state="validateField('input-nome')"
                                             data-vv-as="Nome completo"
                                             />
-                                        <small class="danger">{{ veeErrors.first('input-nome') }}</small>
+                                        <div class="messages-error">{{ veeErrors.first('input-nome') }}</div>
                                     </div>
                                 </div>
                                 
@@ -49,7 +49,7 @@
                                             data-vv-as="CPF"
                                             :state="validateField('input-cpf')"
                                             />
-                                        <small class="danger">{{ veeErrors.first('input-cpf') }}</small>
+                                        <div class="messages-error">{{ veeErrors.first('input-cpf') }}</div>
                                     </div>
                                 </div>
                                 
@@ -65,12 +65,11 @@
                                             v-model="form.celular"
                                             placeholder="(00) 0 0000 - 0000"
                                             v-mask="'(##) # #### - ####'"
-                                            v-validate="'required'"
+                                            v-validate="{ required: true, min: 18 }"
                                             :state="validateField('input-celular')"
-                                            aria-describedby="input-celular-feedback"
                                             data-vv-as="Número de celular" 
                                             />
-                                        <small class="danger">{{ veeErrors.first('input-celular') }}</small>
+                                        <div class="messages-error">{{ veeErrors.first('input-celular') }}</div>
                                     </div>
                                 </div>
                                 
@@ -91,7 +90,7 @@
 
                                         </select>
                                         
-                                        <small class="danger">{{ veeErrors.first('input-uf') }}</small>
+                                        <div class="messages-error">{{ veeErrors.first('input-uf') }}</div>
                                     </div>
                                     
                                 </div>
@@ -112,7 +111,7 @@
 
                                         </select>
                                         
-                                        <small class="danger">{{ veeErrors.first('input-cidade') }}</small>
+                                        <div class="messages-error">{{ veeErrors.first('input-cidade') }}</div>
                                     </div>
                                 </div>
                             </div>
