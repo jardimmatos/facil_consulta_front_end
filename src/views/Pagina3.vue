@@ -12,32 +12,32 @@
 				<form @submit.stop.prevent="cadastrarProfissional">
 					<div class="row">
 						<div class="col">
-							<div class="col my-2">
-								<strong>Nome Completo: </strong>
+							<div class="col revision">
+								<div class="revision-label">Nome Completo: </div>
 								<div>{{form.nome_completo}}</div>
 							</div>
-							<div class="col my-2">
-								<strong>CPF: </strong>
+							<div class="col revision">
+								<div class="revision-label">CPF: </div>
 								<div>{{form.cpf}}</div>
 							</div>
-							<div class="col my-2">
-								<strong>Número de celular ou telefone:</strong>
+							<div class="col revision">
+								<div class="revision-label">Número de celular ou telefone:</div>
 								<div>{{form.celular}}</div>
 							</div>
-							<div class="col my-2">
-								<strong>Estado/Cidade:</strong>
+							<div class="col revision">
+								<div class="revision-label">Estado/Cidade:</div>
 								<div>{{form.uf}} - {{form.cidade}}</div>
 							</div>
-							<div class="col my-2">
-								<strong>Especialidade principal:</strong>
+							<div class="col revision">
+								<div class="revision-label">Especialidade principal:</div>
 								<div>{{form.especialidade}}</div>
 							</div>
-							<div class="col my-2">
-								<strong>Preço da consulta:</strong>
+							<div class="col revision">
+								<div class="revision-label">Preço da consulta:</div>
 								<div>R$ {{form.preco_consulta}}</div>
 							</div>
-							<div class="col my-2">
-								<strong>Formas de pagamento da consulta:</strong>
+							<div class="col revision">
+								<div class="revision-label">Formas de pagamento da consulta:</div>
 								<div v-for="forma,index in form.formas_pagamentos" :key="index">
 									- {{forma}} {{ form.parcelas > 0  && forma =='Cartão de crédito' ? `- Parcelamento em ${form.parcelas}x sem juros`:''}}
 								</div>
@@ -46,7 +46,7 @@
 								<btn-prox class="btn-cta" label="CADASTRAR PROFISSIONAL" />
 							</div>
 							<div class="col-12 text-center">
-								<button class="btn btn-link my-2 primary-0" @click="goTo('pagina1')">Editar cadastro
+								<button class="btn btn-link primary-0" @click="goTo('pagina1')">Editar cadastro
 								</button>
 							</div>
 						</div>
