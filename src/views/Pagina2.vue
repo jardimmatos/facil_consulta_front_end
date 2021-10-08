@@ -37,7 +37,7 @@
 
                                         </select>
                                         
-                                        <small class="danger">{{ veeErrors.first('input-especialidade') }}</small>
+                                        <div class="messages-error">{{ veeErrors.first('input-especialidade') }}</div>
                                     </div>
 								</div>
 
@@ -54,7 +54,7 @@
 												data-vv-as="Preço da consulta"
 											/>
 										</div>
-										<small class="danger">{{ veeErrors.first('input-preco-consulta') }}</small>
+										<div class="messages-error">{{ veeErrors.first('input-preco-consulta') }}</div>
 									</div>
 								</div>
 								
@@ -62,7 +62,7 @@
 								<div class="col col-12">
 									<div class="form-group">
 										<label class="form-label">Formas de pagamento da consulta*:</label><br/>
-										<small class="danger" v-if="veeErrors.has('input-formaspagamento')">{{veeErrors.first('input-formaspagamento')}}</small>
+										<div class="messages-error">{{veeErrors.first('input-formaspagamento')}}</div>
 										<div class="form-check custom-checkbox" v-for="fp,index in formas_pagamentos" :key="`forma_${index}`">
 											<input class="form-check-input" type="checkbox" :id="`input-formaspagamento_${index}`" 
 												@change="onSelectFormaPgto" 
@@ -78,7 +78,8 @@
 											<!-- PARCELAS -->
 											<div class="form-group" v-if="fp.parcelas.length > 0 && parcelamentos.length > 0">
 												<label class="form-label mt-2">Parcelamento em</label><br/>
-												<small class="danger" v-if="veeErrors.has('input-parcelas')">{{veeErrors.first('input-parcelas')}}</small>
+												<div class="messages-error">{{veeErrors.first('input-parcelas')}}</div>
+
 												<div class="form-check mt-2" v-for="parc,i in parcelamentos" :key="`parcela_${i}`">
 													<input class="form-check-input" type="radio" :id="`input-parcelas_${i}`" 
 														v-validate="'included:1,2,3'"
